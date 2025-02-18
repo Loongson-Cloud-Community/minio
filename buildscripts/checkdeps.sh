@@ -75,7 +75,7 @@ check_minimum_version() {
 
 assert_is_supported_arch() {
     case "${ARCH}" in
-        x86_64 | amd64 | aarch64 | ppc64le | arm* | s390x )
+        x86_64 | amd64 | aarch64 | ppc64le | arm* | s390x | loongarch64)
             return
             ;;
         *)
